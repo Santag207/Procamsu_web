@@ -1,0 +1,28 @@
+/* footer.css */
+.footer {
+    background: #17252a;
+    color: #feffff;
+    padding: 1rem 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .social-links {
+    list-style: none;
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .social-links li a {
+    color: #feffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  

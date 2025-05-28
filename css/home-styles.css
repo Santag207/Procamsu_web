@@ -1,0 +1,212 @@
+/* Estilos globales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section adaptable y responsiva */
+.hero {
+  position: relative;
+  width: 100%;
+  background-image: url('../img/fondo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 80vh; /* Mínimo aceptable en desktop */
+}
+
+/* ✅ Corrección para móviles */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto; /* No forza altura */
+    height: auto;      /* Se adapta al contenido */
+    background-size: contain;
+    background-position: top center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* About Section */
+.about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #228B22;
+}
+
+/* Mission and Vision */
+.mission-vision {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.mission-vision .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mission,
+.vision {
+  margin-bottom: 30px;
+}
+
+/* Títulos centrados horizontalmente */
+.mission h3,
+.vision h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #228B22;
+  margin-bottom: 10px;
+  text-align: center; /* <-- Esto centra horizontalmente */
+}
+
+/* Texto alineado justificado */
+.mission p,
+.vision p {
+  font-size: 17px;
+  color: #333;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Programs Section */
+.programs {
+  background-color: #ffffff;
+}
+
+.programs h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #228B22;
+}
+
+.program-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+  color: #228B22;
+}
+
+.card p {
+  padding: 0 15px 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #228B22;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.visit-section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.map-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+/* Mapa */
+.map-container {
+  flex: 1 1 500px;
+  min-height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Detalles de visita */
+.visit-details {
+  flex: 1 1 400px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.visit-details h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #228B22;
+}
+
+.visit-details p,
+.visit-details ul {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.visit-details ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+  .map-info-container {
+    flex-direction: column;
+  }
+
+  .map-container,
+  .visit-details {
+    width: 100%;
+  }
+}
